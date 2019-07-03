@@ -32,19 +32,28 @@ class ProveedorModel
             $sth->bindParam(3, $fVencimiento);
             $sth->bindParam(4, $cantidad);
             $sth->bindParam(5, $idProducto);
+
+            $res=0;
             
             if ($sth->execute()) {
                 $sth2 = $this->conexion->prepare("update producto set estado = 1 where id_producto= ?");
                 $sth2->bindParam(1, $idProducto);
                 if ($sth2->execute()) {
                     echo "Patata";
+                    $res =1;
                 }else{
                     echo "Error patata";
+                    $res = 0;
                 }
-                echo "Insertado";
+                $res = 1;
+                //header("Location: ../vista/proveedor_producto_view.php");
+
             }else{
+                $res = 0;
                 echo "No insertado";
-            }        
+            }     
+
+            return $res;   
         
     }  
 
