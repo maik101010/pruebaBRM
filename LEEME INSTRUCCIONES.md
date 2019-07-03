@@ -14,3 +14,5 @@ donde hago las consultas pertinentes a la base de datos.
 6- Se utiliza el framework bootstrap para utilizar los estilos del mismo
 
 7- Se validan los formularios de forma dinamica con el archivo "validar_formulario.js" que se encuentra en la carpeta js
+
+8- Se agrega un campo en la tabla producto para validar que los productos se encuentren disponibles en el inventario o que aún estan en estado "inhabilitados" o sin registrar. 
