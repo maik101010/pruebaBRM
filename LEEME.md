@@ -12,3 +12,5 @@ donde hago las consultas pertinentes a la base de datos.
 5- Se utiliza la libreria Jquery para el modulo de venta de productos, en donde debemos validar el total de la venta
 
 6- Se utiliza el framework bootstrap para utilizar los estilos del mismo
+
+7- Se validan los formularios de forma dinamica con el archivo "validar_formulario.js" que se encuentra en la carpeta js
