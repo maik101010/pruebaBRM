@@ -84,6 +84,33 @@ class ClienteModel
 
     }
 
+    /**
+     * Genera el total de la venta a partir de la cantidad y el producto indicado
+     * @param  [int] $cantidad   [cantidad del producto]
+     * @param  [int] $idProducto [id del producto]
+     * @return [int] $total      [total de la venta]
+     */
+    public function obtenerTotalVenta($cantidad, $idProducto){
+
+        $query = "SELECT precio FROM inventario WHERE producto_id = ?";
+        $stament =  $this->conexion->prepare($query);
+
+        $stament->bindParam(1, $idProducto);
+        $stament->execute();
+        $resultados = $stament->fetchAll(PDO::FETCH_ASSOC);
+  
+        foreach ($resultados as $row) {
+            $precio= $row["precio"];            
+        }
+
+        $total = $cantidad * $precio;
+
+       return $total;       
+
+
+    }
+
+
 
     
 

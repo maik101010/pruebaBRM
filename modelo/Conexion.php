@@ -1,7 +1,13 @@
 <?php
-
+/**
+ * Conexion a la base de datos 
+ */
 class Conexion
-{
+{	
+	/**
+	 * Metodo que me genera una conexión a una base de datos mysql
+	 * @return [PDO] [objeto con la instancia de la conexion generada]
+	 */
 	public static function conectar(){
 		try{
 		$usuario = "root";

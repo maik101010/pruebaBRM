@@ -1,25 +1,21 @@
- <header class="header" id="header">
+<header class="header" id="header">
 <?php header('Content-Type: text/html; charset=UTF-8'); ?>
- <nav class="menu">
-    <div class="logo">
-      <img src="#" alt="">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="cliente_compra_view.php">Compra Cliente</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="proveedor_producto_view.php">Registro de producto <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="visualizacion_general_view.php">Visualización general</a>
+        </li>
+      </ul>
     </div>
-
-      <div class="contenedor-btn-menu-responsive">
-        <a href="#" class="btn-menu" id="btn-menu"><i class="icono fa fa-bars"></i></a>
-      </div>
-
-      <div class="enlaces" id="enlaces">
-            
-            <a href="cliente_compra_view.php"><i class="fa fa-home"></i>Compra Cliente</a>
-            <a href="proveedor_producto_view.php"><i class="fa fa-home"></i>Registro de productos</a>
-            <a href="visualizacion_general.php"><i class="fa fa-home"></i>Visualización general</a>
-            <!-- <a href="quienes-somos.php"><i class="fa fa-user-circle-o"></i> Acerca</a>
-            <a href="proveedor.php"><i class="fa fa-truck"></i> Proveedores</a>
-            <a href="consultores.php"><i class="fa fa-street-view"></i> Consultores</a>
-            <a href="view_producto_tabla.php"><i class="fa fa-tags"></i> Productos</a>
-            <a href="contacto.php"><i class="fa fa-envelope-o"></i> Contacto</a>
-            <a href="login.php"><i class="fa fa-sign-in"></i> Iniciar Sesión</a> -->
-      </div>
-    </nav>
+  </nav>
 </header>
