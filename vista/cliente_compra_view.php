@@ -12,7 +12,7 @@
 	 ?>
 <body>
 	<h3>Venta de producto</h3>
-	<form action="../controlador/ClienteController.php" method="post">
+	<form action="../controlador/ClienteController.php" method="post" id="form">
  		<input type="text" name="cantidad" placeholder="cantidad" id="cantidad">
  		<select name="id_producto" id="id_producto">
  		<option value="0">Seleccionar producto</option>

@@ -12,7 +12,7 @@
 	 ?>
 <body>
 	<h3>Registro de productos</h3>
- 	<form action="../controlador/ProveedorController.php" method="post">
+ 	<form action="../controlador/ProveedorController.php" method="post" id="form">
  		<div class="form-group">
 	 		<input type="text" name="lote" placeholder="lote">
 	 		<input type="text" name="precio" placeholder="precio">
